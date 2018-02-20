@@ -12,3 +12,11 @@
 -- secret2 f = False
 --
 -- Any of secret realizations
+--
+-- boolFunction :: Bool -> Bool -> Bool
+--
+-- secret2 :: (Int -> Bool) -> Bool
+-- secret2 f = fold boolFunction [secretI f, secretJ f, ...]
+--
+--
+-- where secretI, secretJ are like secret
